@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لوحة إدارة مسجد الحرمين</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+font-family:Cairo,sans-serif;
+background:#f5f5f5;
+padding:20px;
+}
+
+.container{
+max-width:500px;
+margin:auto;
+background:#fff;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+h2{
+text-align:center;
+color:#0b7a3b;
+}
+
+label{
+display:block;
+margin-top:15px;
+font-weight:bold;
+}
+
+input{
+width:100%;
+padding:10px;
+margin-top:5px;
+font-size:18px;
+}
+
+button{
+width:100%;
+padding:12px;
+margin-top:20px;
+background:#0b7a3b;
+color:white;
+border:none;
+font-size:18px;
+border-radius:8px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>لوحة إدارة المسجد</h2>
+
+<label>قيمة المشروع</label>
+<input id="goal" type="number">
+
+<label>المبلغ المحصل</label>
+<input id="collected" type="number">
+
+<label>عدد المتبرعين</label>
+<input id="donors" type="number">
+
+<label>نسبة الإنجاز</label>
+<input id="progress" type="number">
+
+<button id="logout">
+تسجيل الخروج
+</button>
+<button id="save">حفظ التعديلات</button>
+
+</div>
+
+<script type="module" src="js/admin.js"></script>
+
+</body>
+</html>
